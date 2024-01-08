@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Ocean</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index-css.css">
+    <link rel="stylesheet" href="bubble.css">
+    <iframe src="ocean.mp3" allow="autoplay" style="display:none" id="iframeAudio" ></iframe>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-size: 4vh; font-weight: bolder;">Virtual Ocean</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-weight: bold;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/maps/search/aquariums+near+me/"  style="font-weight: bold;">Find An
+                            Aquarium Near You</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold;">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="parallax">
+        <div class="header">
+
+            <!--Content before waves-->
+            <div class="inner-header flex">
+                <h1>Welcome To Virtual Ocean</h1>
+            </div>
+
+            <!--Waves Container-->
+            <div>
+
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,172,193,0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,172,193,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,172,193,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#33a5bc" />
+                    </g>
+                </svg>
+
+            </div>
+            <!--Waves end-->
+
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src = "ocean.mp3">
+    </audio>
+    <div class="p">
+        <div class="fish">
+            <a href="webpage1.html"><img class="f1" src="fish.png" style="animation-delay: 2s;"> </a><br>
+            <a href="webpage2.html"><img class="f2" src="fish1.png" style="animation-delay: 5s; margin: 25px;"></a><br>
+            <a href="webpage1.html"><img class="f3" src="fish.png" style="animation-delay: 7s; margin: 15px;"></a><br>
+            <a href="webpage3.html"><img class="f4" src="fish2.png" style="animation-delay: 1s;"></a><br>
+            <a href="webpage2.html"><img class="f5" src="fish1.png" style="animation-delay: 3s; margin: 30px;"></a><br>
+            <a href="webpage1.html"><img class="f6" src="fish.png" style="animation-delay: 5s; margin: 30px;"></a><br>
+            <a href="webpage3.html"><img class="f7" src="fish2.png" style="animation-delay: 6s; margin: 20px;"></a><br>
+            <a href="webpage2.html"><img class="f8" src="fish1.png" style="animation-delay: 1s;"></a><br>
+            <a href="webpage1.html"><img class="f9" src="fish.png" style="animation-delay: 5s; margin: 25px; margin-bottom: 70px;"></a><br>
+            <a href="webpage4.html"><img class="f9" src="jellyfish.png" style="animation-delay: 1s; margin: 20px;"></a><br>
+            <a href="webpage4.html"><img class="f9" src="jellyfish.png" style="animation-delay: 7s; margin: 25px; margin-bottom: 900px;"></a><br>
+        </div>
+        <div class="shark">
+            <a href="webpage5.html"><img class="s1" src="shark.png" style="animation-delay: 6s; margin: 60px;"></a><br>
+            <a href="webpage5.html"><img class="s2" src="shark.png" style="animation-delay: 3s; margin: 15px; margin-bottom: 300px;"></a><br>
+            <a href="webpage6.html"><img class="s2" src="whale.png" style="animation-delay: 3s; margin: 15px;"></a><br>
+            <a href="webpage6.html"><img class="s2" src="whale.png" style="animation-delay: 6s; margin: 15px;"></a><br>
+            <a href="webpage6.html"><img class="s2" src="whale.png" style="animation-delay: 4s; margin: 15px; margin-bottom: 750px;"></a><br>
+            <a href="webpage7.html"><img class="s2" src="squid.png" style="animation-delay: 1s; margin: 10px;"></a><br>
+            <a href="webpage7.html"><img class="s2" src="squid.png" style="animation-delay: 3s; margin: 20px; margin-bottom: 400px;"></a><br>
+            <a href="webpage8.html"><img class="s2" src="octopus.png" style="animation-delay: 2s; margin: 15px;"></a><br>
+            <a href="webpage8.html"><img class="s2" src="octopus.png" style="animation-delay: 6s; margin: 15px; margin-bottom: 300px;"></a><br>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Titanic"><img src="titanic.png" style="height: 450px;"></a>
+    </div>
+    <div class="container">       
+        <div class="bubbles">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+            <img src="bubble1.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        &#169 1996-2023, VirtualOcean.com, Inc. or its affiliates
+    </footer>
+
+</body>
+
+</html>

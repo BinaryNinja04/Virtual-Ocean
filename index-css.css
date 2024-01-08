@@ -1,0 +1,291 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+  background-image:linear-gradient(rgb(87, 160, 174),rgba(36, 36, 206, 0.401));
+}
+
+h1 {
+  width: 100%;
+  min-height:50vh;
+  position:fixed;
+  top:30%;
+  left:50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5vw;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+  5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform:scale(1,1.1) translate(-50%,10%);
+  transform-style: preserve-3d;
+  z-index: -2px;
+}
+.p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #fff7f7;
+  z-index: 2px;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background-image:linear-gradient(rgba(0, 179, 255, 0.985), white);
+  color:rgb(255, 255, 255);
+  transform-style: preserve-3d;
+  perspective: 1px;
+  
+}
+.logo {
+  width:50px;
+  fill:black;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:175vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:400px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+.p{
+  color:#33a5bc;
+  background-image:linear-gradient(#33a5bc,#0e3a42);
+  padding-bottom: 0;
+  margin-block-end: 0;
+}
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-header::after{
+  content: "";
+  width: 50%;
+  height:50%;
+  position:absolute;
+  background: url("sun.png") top right;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+footer{
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 100px;
+}
+.fish img{
+  z-index: 2px;
+  width: 150px;
+  /*height: 100px;*/
+ /* background-color: black;*/
+  animation: fish 7s linear infinite;
+  &:hover{
+    animation-play-state: paused;
+  }
+
+}
+.shark img{
+  z-index: 2px;
+  width: 450px;
+  /*height: 100px;*/
+ /* background-color: black;*/
+  animation: shark 5s linear infinite;
+  &:hover{
+    animation-play-state: paused;
+  }
+}
+.shark.s1{
+  position: relative;
+  top: 100px;
+  left:-200px;
+  animation-delay: 3s;
+}
+.shark.s1{
+  position: relative;
+  top: 100px;
+  left:-200px;
+  animation-delay: 1s;
+}
+
+.fish.f1{
+  position: relative;
+  top: 100px;
+  left:-200px;
+  animation-delay: 3s;
+}
+.fish.f2{
+  position: relative;
+  top: 270px;
+  left:-200px;
+  /*animation-delay: 2s;*/
+}
+.fish.f3{
+  position: relative;
+  top: 200px;
+  left:-200px;
+  /*animation-delay: 5s;*/
+}
+.fish.f4{
+  position: absolute;
+  top: 550px;
+  left:-200px;
+  /*animation-delay: 7s;*/
+}
+.fish.f5{
+  position: absolute;
+  top: 400px;
+  left:-200px;
+  /*animation-delay: 4s;*/
+}
+.fish.f6{
+  position: absolute;
+  top: 300px;
+  left:-200px;
+  /*animation-delay: 1s;*/
+}
+.fish.f7{
+  position: absolute;
+  top: 500px;
+  left:-200px;
+  /*animation-delay: 6s;*/
+}
+.fish.f8{
+  position: absolute;
+  top: 170px;
+  left:-200px;
+  /*animation-delay: 2s;*/
+  margin: 200px;
+}
+.fish.f9{
+  position: absolute;
+  top: 250px;
+  left:-200px;
+  /*animation-delay: 3s;*/
+}
+.fish.f10{
+  position: relative;
+  width: 400px;
+  top: 100px;
+  left:-200px;
+  animation-delay: 3s;
+}
+.fish.f11{
+  position: relative;
+  width: 400px;
+  top: 100px;
+  left:-200px;
+  animation-delay: 4s;
+}
+
+
+@keyframes shark{
+  0%{
+    transform: translateX(0);
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(97vw);
+    opacity: 1;
+  }
+}
+
+@keyframes fish{
+  0%{
+    transform: translateX(0);
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(97vw);
+    opacity: 1;
+  }
+}
